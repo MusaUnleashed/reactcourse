@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>דמקה תרגל ראשון</title>
+<meta charset="utf-8"/>
+<!--
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+-->
+<link rel="stylesheet" href="app.css"/>
+</head><body>
+<script src="d.js"></script>
+<script src="board.js"></script>
+<script src="computer.js"></script>
+<script src="app.js"></script>
+
+<div style="position:absolute">
+	<!--<div class="test10">size 10</div>
+	<div class="test25">size 25</div>
+	<div class="test50">size 50</div>
+	<div class="test100">size 100</div>-->
+</div>
+
+<h1>דמקה</h1>
+    <!--the html calls the board.dotable function which adds cells to the table 
+    and binds onclick event to each cell-->
+	<table class="centerGame">
+	<script>board.createTable();</script>
+	</table>
+	<div id="message" class="centerGame"></div>
+	<div class="btnbar">
+		<input type="button" class="btn" onclick="board.restart()" name="restart" value="Start  game"/>
+	</div>
+	<div id="gameover"></div>
+<script>
+pageLoaded();</script>
+</body></html>
